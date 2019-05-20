@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Wrapper from "./components/top_nav/Wrapper.jsx";
-import Store from "./components/top_nav/Store.jsx";
+import Main_bar from "./components/top_nav/Main_bar.jsx";
 class Navbar_sidebar extends React.Component {
   constructor() {
     super();
@@ -17,7 +17,7 @@ class Navbar_sidebar extends React.Component {
             height="44"
             position="absolute"
           />
-          <Store />
+          <Main_bar />
         </Wrapper>
       </div>
     );
