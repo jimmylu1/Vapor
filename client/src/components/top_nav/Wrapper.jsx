@@ -7,6 +7,8 @@ const Wrapper = styled.div`
   background: #171a21;
   margin-right: auto;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   max-height: 70px;
 `;
 

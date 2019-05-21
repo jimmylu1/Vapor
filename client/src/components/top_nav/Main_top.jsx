@@ -34,9 +34,9 @@ const User = styled.div`
   font-family: "Motiva Sans", Sans-serif;
   font-size: 14px;
   padding: 45px 7px 7px;
-  position: absolute;
-  top: 20px;
-  right: 6px;
+  position: relative;
+  bottom: 17px;
+  /* right: 604px; */
   &:hover {
     color: white;
   }
@@ -63,6 +63,20 @@ const Support = styled.div`
   position: absolute;
   top: 20px;
   right: 475px;
+  &:hover {
+    color: white;
+  }
+`;
+
+const Install = styled.button`
+  color: #e5efdc;
+  font-family: "Motiva Sans", Sans-serif;
+  font-size: 11px;
+  background: #616a72;
+  padding: 0px 9px 0px 35px;
+  position: absolute;
+  top: 14px;
+  right: 115px;
   &:hover {
     color: white;
   }
@@ -122,7 +136,7 @@ class Main_top extends React.Component {
 
   render() {
     return (
-      <div>
+      <nav className="navbar">
         <Wrapper>
           <img
             src="https://steamstore-a.akamaihd.net/public/shared/images/header/globalheader_logo.png?t=962016"
@@ -131,6 +145,7 @@ class Main_top extends React.Component {
             position="absolute"
           />
           <div
+            className="dropdown"
             onMouseLeave={this.hideStore}
             style={{ display: "inline-block" }}
           >
@@ -165,8 +180,9 @@ class Main_top extends React.Component {
           </div>
           <Chat style={{ display: "inline-block" }}>CHAT</Chat>
           <Support style={{ display: "inline-block" }}>SUPPORT</Support>
+          <Install>Install Steam</Install>
         </Wrapper>
-      </div>
+      </nav>
     );
   }
 }
