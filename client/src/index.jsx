@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Wrapper from "./components/top_nav/Wrapper.jsx";
-import Main_bar from "./components/top_nav/Main_bar.jsx";
+import Main_top from "./components/top_nav/Main_top.jsx";
+
 class Navbar_sidebar extends React.Component {
   constructor() {
     super();
@@ -10,15 +10,7 @@ class Navbar_sidebar extends React.Component {
   render() {
     return (
       <div>
-        <Wrapper>
-          <img
-            src="https://steamstore-a.akamaihd.net/public/shared/images/header/globalheader_logo.png?t=962016"
-            width="176"
-            height="44"
-            position="absolute"
-          />
-          <Main_bar />
-        </Wrapper>
+        <Main_top />
       </div>
     );
   }
