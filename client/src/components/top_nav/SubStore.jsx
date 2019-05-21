@@ -4,10 +4,8 @@ import styled from "styled-components";
 const Sub_store = styled.div`
   color: #b8b6b4;
   font-family: "Motiva Sans", Sans-serif;
-  font-size: 9px;
-  padding: 45px 7px 7px;
-  position: relative;
-  bottom: 17px;
+  font-size: 12px;
+  padding: 5px 7px 7px;
   &:hover {
     color: white;
   }

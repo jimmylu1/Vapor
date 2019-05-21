@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Main_top from "./components/top_nav/Main_top.jsx";
+import Main_top from "./components/top_nav/main_top.jsx";
 
 class Navbar_sidebar extends React.Component {
   constructor() {
