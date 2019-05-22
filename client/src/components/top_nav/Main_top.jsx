@@ -34,8 +34,9 @@ const User = styled.div`
   font-family: "Motiva Sans", Sans-serif;
   font-size: 14px;
   padding: 45px 7px 7px;
-  position: relative;
-  bottom: 17px;
+  position: absolute;
+  top: 20px;
+  right: 555px;
   /* right: 604px; */
   &:hover {
     color: white;
@@ -49,7 +50,7 @@ const Chat = styled.div`
   padding: 45px 7px 7px;
   position: absolute;
   top: 20px;
-  right: 553px;
+  right: 430px;
   &:hover {
     color: white;
   }
@@ -82,6 +83,16 @@ const Install = styled.button`
   }
 `;
 
+const Notif = styled.button`
+  color: #ffffff;
+  background: #262625;
+  margin: 0px 3px 0px 8px;
+  padding: 0px 8px;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+`;
+
 class Main_top extends React.Component {
   constructor() {
     super();
@@ -99,12 +110,14 @@ class Main_top extends React.Component {
   }
 
   showStore() {
+    console.log("show store working");
     this.setState({
       displayStore: true
     });
   }
 
   hideStore() {
+    console.log("hidestore working");
     this.setState({
       displayStore: false
     });
@@ -136,7 +149,7 @@ class Main_top extends React.Component {
 
   render() {
     return (
-      <nav className="navbar">
+      <nav>
         <Wrapper>
           <img
             src="https://steamstore-a.akamaihd.net/public/shared/images/header/globalheader_logo.png?t=962016"
@@ -145,13 +158,13 @@ class Main_top extends React.Component {
             position="absolute"
           />
           <div
-            className="dropdown"
             onMouseLeave={this.hideStore}
             style={{ display: "inline-block" }}
           >
             <Store
               style={{ display: "inline-block" }}
               onMouseEnter={this.showStore}
+              // style={{ position: "absolute" }}
             >
               STORE
             </Store>
@@ -180,7 +193,14 @@ class Main_top extends React.Component {
           </div>
           <Chat style={{ display: "inline-block" }}>CHAT</Chat>
           <Support style={{ display: "inline-block" }}>SUPPORT</Support>
-          <Install>Install Steam</Install>
+          <Install
+            as="a"
+            href="https://store.steampowered.com/about/"
+            style={{ textDecoration: "none" }}
+          >
+            Install Steam
+          </Install>
+          <Notif>Notification</Notif>
         </Wrapper>
       </nav>
     );

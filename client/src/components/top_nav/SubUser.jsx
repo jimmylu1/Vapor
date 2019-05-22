@@ -12,7 +12,7 @@ const Sub_user = styled.div`
 `;
 
 const Styled_user = () => (
-  <div>
+  <div style={{ position: "absolute" }}>
     <Sub_user>ACTIVITY</Sub_user>
     <Sub_user>PROFILE</Sub_user>
     <Sub_user>FRIENDS</Sub_user>

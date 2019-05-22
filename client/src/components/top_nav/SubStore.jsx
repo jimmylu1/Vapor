@@ -6,13 +6,14 @@ const Sub_store = styled.div`
   font-family: "Motiva Sans", Sans-serif;
   font-size: 12px;
   padding: 5px 7px 7px;
+  position: relative;
   &:hover {
     color: white;
   }
 `;
 
 const Styled_store = () => (
-  <div>
+  <div style={{ position: "absolute" }}>
     <Sub_store>FEATURED</Sub_store>
     <Sub_store>EXPLORE</Sub_store>
     <Sub_store>CURATORS</Sub_store>

@@ -12,7 +12,7 @@ const Sub_community = styled.div`
 `;
 
 const Styled_community = () => (
-  <div>
+  <div style={{ position: "absolute" }}>
     <Sub_community>HOME</Sub_community>
     <Sub_community>DISCUSSIONS</Sub_community>
     <Sub_community>WORKSHOP</Sub_community>
