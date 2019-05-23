@@ -13,7 +13,7 @@ class Navbar_sidebar extends React.Component {
     return (
       <div>
         <Main_top />
-        <Wishlist>Wishlist</Wishlist>
+        <Wishlist>WISHLIST</Wishlist>
         <Main_sub />
       </div>
     );

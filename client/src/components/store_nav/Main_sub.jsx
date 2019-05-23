@@ -8,22 +8,21 @@ import Styled_hardware from "./Sub_hardware.jsx";
 const Layout = styled.div`
   display: flex;
   align-items: flex-start;
-  background-color: #93b3c8;
+  background-color: rgba(62, 126, 167, 0.8);
   margin-top: 120px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 `;
 
 const YourStore = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  padding: 0px 7px 0px 15px;
-  margin: 0px 5px 0px 0px;
+  padding: 11px 11px 11px 11px;
   position: relative;
-  /* float: left; */
-  border-right: 1px solid;
-  border-left: 1px solid;
-  */ &:hover {
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  &:hover {
     color: white;
+    background-color: #c6d4df;
   }
 `;
 
@@ -31,55 +30,51 @@ const Games = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  padding: 0px 7px 0px 15px;
-  margin: 0px 5px 0px 0px;
+  padding: 11px 11px 11px 11px;
   position: relative;
-  /* float: left; */
   border-right: 1px solid;
   border-left: 1px solid;
-  */ &:hover {
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  &:hover {
     color: white;
+    background-color: #c6d4df;
   }
 `;
 const Software = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  padding: 0px 7px 0px 15px;
-  margin: 0px 5px 0px 0px;
+  padding: 11px 11px 11px 11px;
   position: relative;
-  /* float: left;  */
-  /* border-right: 1px solid;
-  border-left: 1px solid; */
+  border-right: 1px solid;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
   &:hover {
     color: white;
+    background-color: #c6d4df;
   }
 `;
 const Hardware = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  padding: 0px 7px 0px 15px;
+  padding: 11px 11px 11px 11px;
   position: relative;
-  /* float: left; */
-  /* border-right: 1px solid;
-  border-left: 1px solid; */
+  border-right: 1px solid;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
   &:hover {
     color: white;
+    background-color: #c6d4df;
   }
 `;
 const News = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  padding: 0px 7px 0px 15px;
+  padding: 11px 11px 11px 11px;
   margin: 0px 5px 0px 0px;
   position: relative;
-  /* float: left;  */
-  /* border-right: 1px solid;
-  border-left: 1px solid;
-  border-top: 1px solid;
-  border-bottom: 1px solid; */
+  border-right: 1px solid;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
   &:hover {
     color: white;
   }
@@ -87,17 +82,22 @@ const News = styled.div`
 
 const Searchbox = styled.input`
   position: relative;
-  margin-left: 828px;
+  margin-left: 776px;
   margin-top: -35px;
   /* float: left; */
   display: flex;
   flex-direction: row;
   border: 1px solid grey;
-  background-color: #315282;
+  background-color: #316282;
+  box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
   padding: 2px;
+  height: 26px;
+  width: 180px;
   ::placeholder {
     font-family: "Motiva Sans Light", Arial, Helvetica, sans-serif;
-    color: black;
+    color: #0e1c25;
   }
 `;
 
@@ -127,14 +127,12 @@ class Main_sub extends React.Component {
   }
 
   showYourstore() {
-    console.log("yourstore working show");
     this.setState({
       displayYourStore: true
     });
   }
 
   hideYourstore() {
-    console.log("yourstore working hide");
     this.setState({
       displayYourStore: false
     });
@@ -189,6 +187,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showYourstore}
             >
               Your Store
+              <span>&#9660;</span>
             </YourStore>
             {this.state.displayYourStore && <Styled_yourstore />}
           </div>
@@ -201,6 +200,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showGames}
             >
               Games
+              <span>&#9660;</span>
             </Games>
             {this.state.displayGames && <Styled_games />}
           </div>
@@ -213,6 +213,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showSoftware}
             >
               Software
+              <span>&#9660;</span>
             </Software>
             {this.state.displaySoftware && <Styled_software />}
           </div>
@@ -225,6 +226,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showHardware}
             >
               Hardware
+              <span>&#9660;</span>
             </Hardware>
             {this.state.displayHardware && <Styled_hardware />}
           </div>

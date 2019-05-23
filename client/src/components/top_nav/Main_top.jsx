@@ -73,7 +73,7 @@ const Install = styled.button`
   color: #e5efdc;
   font-family: "Motiva Sans", Sans-serif;
   font-size: 11px;
-  background: #5c7e10;
+  background: #616a72;
   padding: 0px 9px 0px 35px;
   position: absolute;
   top: 14px;
@@ -110,14 +110,12 @@ class Main_top extends React.Component {
   }
 
   showStore() {
-    console.log("show store working");
     this.setState({
       displayStore: true
     });
   }
 
   hideStore() {
-    console.log("hidestore working");
     this.setState({
       displayStore: false
     });
@@ -164,7 +162,6 @@ class Main_top extends React.Component {
             <Store
               style={{ display: "inline-block" }}
               onMouseEnter={this.showStore}
-              // style={{ position: "absolute" }}
             >
               STORE
             </Store>

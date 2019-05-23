@@ -6,6 +6,8 @@ const Sub_user = styled.div`
   font-family: "Motiva Sans", Sans-serif;
   font-size: 12px;
   padding: 5px 7px 7px;
+  background: #171a21;
+  box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
   &:hover {
     color: white;
   }

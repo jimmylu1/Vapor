@@ -6,6 +6,9 @@ const Sub_games = styled.div`
   font-size: 12px;
   padding: 10px
   background-color: #c6d4df;
+  box-shadow: 1px 0px 0px rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba( 16, 21, 25, 0.3);
+  border-left: 1px solid rgba( 16, 21, 25, 0.3);
   &:hover {
     color: white;
     background-color: #171a21;

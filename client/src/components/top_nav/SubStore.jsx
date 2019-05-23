@@ -7,6 +7,8 @@ const Sub_store = styled.div`
   font-size: 12px;
   padding: 5px 7px 7px;
   position: relative;
+  background: #171a21;
+  box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
   &:hover {
     color: white;
   }
