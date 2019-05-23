@@ -4,8 +4,12 @@ import styled from "styled-components";
 const Sub_yourstore = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  padding: 0px 7px 0px 15px;
+  padding: 10px
   background-color: #c6d4df;
+  &:hover {
+    color: white;
+    background-color: #171a21;
+  }
 `;
 
 const Styled_yourstore = () => (
