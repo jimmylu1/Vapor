@@ -4,6 +4,7 @@ import Wrapper from "./Wrapper.jsx";
 import Styled_store from "./SubStore.jsx";
 import Styled_community from "./SubCommunity.jsx";
 import Styled_user from "./SubUser.jsx";
+import { notif } from "./notif.png";
 
 const Store = styled.div`
   color: #b8b6b4;
@@ -73,11 +74,13 @@ const Install = styled.button`
   color: #e5efdc;
   font-family: "Motiva Sans", Sans-serif;
   font-size: 11px;
+  text-align: center;
   background: #616a72;
-  padding: 0px 9px 0px 35px;
+  padding: 4px 9px 0px 35px;
   position: absolute;
   top: 14px;
-  right: 115px;
+  right: 130px;
+  height: 19px;
   &:hover {
     color: white;
   }
@@ -197,7 +200,6 @@ class Main_top extends React.Component {
           >
             Install Steam
           </Install>
-          <Notif>Notification</Notif>
         </Wrapper>
       </nav>
     );

@@ -8,75 +8,76 @@ import Styled_hardware from "./Sub_hardware.jsx";
 const Layout = styled.div`
   display: flex;
   align-items: flex-start;
-  background-color: rgba(62, 126, 167, 0.8);
-  margin-top: 120px;
+  background-color: #387197;
+  margin-top: 31px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 `;
 
 const YourStore = styled.div`
-  color: #c6d4df;
+  color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
   &:hover {
-    color: white;
-    background-color: #c6d4df;
+    color: #202323;
+    background-color: #e3eaef;
   }
 `;
 
 const Games = styled.div`
-  color: #c6d4df;
+  color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
   border-right: 1px solid;
   border-left: 1px solid;
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
   &:hover {
-    color: white;
-    background-color: #c6d4df;
+    color: #202323;
+    background-color: #e3eaef;
   }
 `;
 const Software = styled.div`
-  color: #c6d4df;
+  color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
   border-right: 1px solid;
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
   &:hover {
-    color: white;
-    background-color: #c6d4df;
+    color: #202323;
+    background-color: #e3eaef;
   }
 `;
 const Hardware = styled.div`
-  color: #c6d4df;
+  color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
   border-right: 1px solid;
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
   &:hover {
-    color: white;
-    background-color: #c6d4df;
+    color: #202323;
+    background-color: #e3eaef;
   }
 `;
 const News = styled.div`
-  color: #c6d4df;
+  color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   margin: 0px 5px 0px 0px;
   position: relative;
   border-right: 1px solid;
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
   &:hover {
-    color: white;
+    color: #202323;
+    background-color: #e3eaef;
   }
 `;
 
@@ -97,15 +98,13 @@ const Searchbox = styled.input`
   width: 180px;
   ::placeholder {
     font-family: "Motiva Sans Light", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: italic;
     color: #0e1c25;
   }
 `;
 
-const Searchbutton = styled.button`
-  background: url(https://steamstore-a.akamaihd.net/public/images/blank.gif);
-  border-radius: 3px;
-  border-color: black;
-`;
+const Searchbutton = styled.span``;
 
 class Main_sub extends React.Component {
   constructor() {
@@ -235,6 +234,7 @@ class Main_sub extends React.Component {
           </div>
         </Layout>
         <Searchbox placeholder="search the store" />
+        {/* <span> &#x1f50e;</span> */}
         {/* <Searchbutton /> */}
         <div />
       </nav>
