@@ -73,7 +73,7 @@ const Install = styled.button`
   color: #e5efdc;
   font-family: "Motiva Sans", Sans-serif;
   font-size: 11px;
-  background: #616a72;
+  background: #5c7e10;
   padding: 0px 9px 0px 35px;
   position: absolute;
   top: 14px;

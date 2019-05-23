@@ -6,6 +6,8 @@ import Styled_software from "./Sub_software.jsx";
 import Styled_hardware from "./Sub_hardware.jsx";
 
 const Layout = styled.div`
+  display: flex;
+  align-items: flex-start;
   background-color: #93b3c8;
   margin-top: 120px;
 `;
@@ -13,13 +15,14 @@ const Layout = styled.div`
 const YourStore = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  padding: 15px;
+  font-size: 13px;
+  padding: 0px 7px 0px 15px;
+  margin: 0px 5px 0px 0px;
   position: relative;
   /* float: left; */
-  /* border-right: 1px solid;
-  border-left: 1px solid; */
-  &:hover {
+  border-right: 1px solid;
+  border-left: 1px solid;
+  */ &:hover {
     color: white;
   }
 `;
@@ -27,8 +30,9 @@ const YourStore = styled.div`
 const Games = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0px 7px 0px 15px;
+  margin: 0px 5px 0px 0px;
   position: relative;
   /* float: left; */
   border-right: 1px solid;
@@ -40,8 +44,9 @@ const Games = styled.div`
 const Software = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0px 7px 0px 15px;
+  margin: 0px 5px 0px 0px;
   position: relative;
   /* float: left;  */
   /* border-right: 1px solid;
@@ -53,7 +58,7 @@ const Software = styled.div`
 const Hardware = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0px 7px 0px 15px;
   position: relative;
   /* float: left; */
@@ -66,8 +71,9 @@ const Hardware = styled.div`
 const News = styled.div`
   color: #c6d4df;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0px 7px 0px 15px;
+  margin: 0px 5px 0px 0px;
   position: relative;
   /* float: left;  */
   /* border-right: 1px solid;
@@ -77,6 +83,28 @@ const News = styled.div`
   &:hover {
     color: white;
   }
+`;
+
+const Searchbox = styled.input`
+  position: relative;
+  margin-left: 828px;
+  margin-top: -35px;
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  background-color: #315282;
+  padding: 2px;
+  ::placeholder {
+    font-family: "Motiva Sans Light", Arial, Helvetica, sans-serif;
+    color: black;
+  }
+`;
+
+const Searchbutton = styled.button`
+  background: url(https://steamstore-a.akamaihd.net/public/images/blank.gif);
+  border-radius: 3px;
+  border-color: black;
 `;
 
 class Main_sub extends React.Component {
@@ -159,7 +187,6 @@ class Main_sub extends React.Component {
             <YourStore
               style={{ display: "inline-block" }}
               onMouseEnter={this.showYourstore}
-              // style={{ position: "absolute" }}
             >
               Your Store
             </YourStore>
@@ -205,6 +232,9 @@ class Main_sub extends React.Component {
             <News style={{ display: "inline-block" }}>News</News>
           </div>
         </Layout>
+        <Searchbox placeholder="search the store" />
+        {/* <Searchbutton /> */}
+        <div />
       </nav>
     );
   }
