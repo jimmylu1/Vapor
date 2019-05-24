@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Friends_box from "./Friends_box.jsx";
+import Player_box from "./Player_box.jsx";
 
 const Side_layout = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ class Side_bar extends React.Component {
       <div>
         <Side_layout>
           <Friends_box />
+          <Player_box />
         </Side_layout>
       </div>
     );

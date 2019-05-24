@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Friends_layout = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const Break = styled.hr`
   margin-top: 10px;
   margin-bottom: 1px;
