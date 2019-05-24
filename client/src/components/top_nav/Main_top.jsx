@@ -4,7 +4,7 @@ import Wrapper from "./Wrapper.jsx";
 import Styled_store from "./SubStore.jsx";
 import Styled_community from "./SubCommunity.jsx";
 import Styled_user from "./SubUser.jsx";
-import { notif } from "./notif.png";
+// import { notif } from "./notif.img";
 
 const Store = styled.div`
   color: #b8b6b4;
@@ -86,12 +86,7 @@ const Install = styled.button`
   }
 `;
 
-const Notif = styled.button`
-  color: #ffffff;
-  background: #262625;
-  margin: 0px 3px 0px 8px;
-  padding: 0px 8px;
-  position: absolute;
+const Notif = styled.div`
   top: 14px;
   right: 20px;
 `;
@@ -200,6 +195,13 @@ class Main_top extends React.Component {
           >
             Install Steam
           </Install>
+          <img
+            src="https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_menu_notifications.png"
+            height="11"
+            width="14"
+            margin-top="14px"
+            margin-right="130px"
+          />
         </Wrapper>
       </nav>
     );
