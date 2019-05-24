@@ -5,7 +5,6 @@ import Friends_box from "./Friends_box.jsx";
 const Side_layout = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
 `;
 
 class Side_bar extends React.Component {

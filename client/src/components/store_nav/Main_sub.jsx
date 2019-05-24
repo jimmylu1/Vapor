@@ -186,7 +186,9 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showYourstore}
             >
               Your Store
-              <span>&#9660;</span>
+              <span>
+                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
+              </span>
             </YourStore>
             {this.state.displayYourStore && <Styled_yourstore />}
           </div>
@@ -199,7 +201,9 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showGames}
             >
               Games
-              <span>&#9660;</span>
+              <span>
+                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
+              </span>
             </Games>
             {this.state.displayGames && <Styled_games />}
           </div>
@@ -212,7 +216,9 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showSoftware}
             >
               Software
-              <span>&#9660;</span>
+              <span>
+                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
+              </span>
             </Software>
             {this.state.displaySoftware && <Styled_software />}
           </div>
@@ -225,7 +231,9 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showHardware}
             >
               Hardware
-              <span>&#9660;</span>
+              <span>
+                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
+              </span>
             </Hardware>
             {this.state.displayHardware && <Styled_hardware />}
           </div>
