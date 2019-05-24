@@ -15,12 +15,11 @@ class Side_bar extends React.Component {
 
   render() {
     return (
-      <div>
-        <Side_layout>
-          <Friends_box />
-          <Player_box />
-        </Side_layout>
-      </div>
+      <Side_layout>
+        <Friends_box />
+        <br />
+        <Player_box />
+      </Side_layout>
     );
   }
 }

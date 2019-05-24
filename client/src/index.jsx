@@ -25,6 +25,7 @@ class Navbar_sidebar extends React.Component {
         <Main_top />
         <Wishlist>WISHLIST</Wishlist>
         <Main_sub />
+        <br />
         <Main_layout>
           <Side_bar />
         </Main_layout>

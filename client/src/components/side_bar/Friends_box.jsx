@@ -23,9 +23,16 @@ const Hours_played = styled.div`
   background-image: -webkit-linear-gradient(left, #15202c, #0e141d);
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 9px 18px;
+  padding: 9px 18px 10px 18px;
 `;
 
+const Recommended = styled.div`
+  color: #969696;
+  background-image: -webkit-linear-gradient(left, #15202c, #0e141d);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 18px 20px 18px;
+`;
 const User_reviews = styled.span`
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -62,15 +69,7 @@ class Friends_box extends React.Component {
             <Break />
           </span>
         </Hours_played>
-        <Hours_played>
-          Recommended By 5 Friends
-          <span>
-            <Break />
-          </span>
-        </Hours_played>
-        <Hours_played>
-          <User_reviews>5 Friends</User_reviews> have played this game:
-        </Hours_played>
+        <Recommended>Recommended By 5 Friends</Recommended>
       </div>
     );
   }
