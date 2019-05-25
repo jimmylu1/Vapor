@@ -1,30 +1,27 @@
-var webpack = require("webpack");
 var path = require("path");
+var SRC_DIR = path.join(__dirname, "/client/src");
+var DIST_DIR = path.join(__dirname, "/public");
 
 module.exports = {
-  entry: {
-    "./dist/app": path.resolve(__dirname, "./client/src/index.jsx")
-  },
+  entry: `${SRC_DIR}/index.jsx`,
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "./public")
+    filename: "bundle.js",
+    path: DIST_DIR
   },
-
   module: {
     rules: [
       {
-        test: [/\.js$/, /\.jsx?$/],
-        exclude: /node_modules/,
+        test: /\.jsx?/,
+        include: SRC_DIR,
         loader: "babel-loader",
-        options: {
-          presets: ["env", "react", "stage-0"]
+        query: {
+          presets: ["react", "es2015"]
         }
+      },
+      {
+        test: /\.(gif|svg|jpg|png)$/,
+        loader: "file-loader"
       }
     ]
-  },
-  externals: {
-    "react/addons": true, // important!!
-    "react/lib/ReactContext": true,
-    "react/lib/ExecutionEnvironment": true
   }
 };
