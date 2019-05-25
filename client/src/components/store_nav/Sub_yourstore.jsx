@@ -8,7 +8,7 @@ const Sub_yourstore = styled.div`
   padding: 10px;
   background: #e3eaef;
   /* box-shadow: 1px 0px 0px rgba(255, 255, 255, 0.2); */
-  box-shadow: 10px 0px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
   /* box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2); */
   border-right: 1px solid rgba(16, 21, 25, 0.3);
   border-left: 1px solid rgba(16, 21, 25, 0.3);

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Friends_box from "./Friends_box.jsx";
 import Player_box from "./Player_box.jsx";
 import VR_box from "./VR_box.jsx";
+import Languages_box from "./Languages_box.jsx";
+import Game_box from "./Game_box.jsx";
 
 const Side_layout = styled.div`
   display: flex;
@@ -22,6 +24,10 @@ class Side_bar extends React.Component {
         <Player_box />
         <br />
         <VR_box />
+        <br />
+        <Languages_box />
+        <br />
+        <Game_box />
       </Side_layout>
     );
   }

@@ -11,7 +11,7 @@ const VR_layout = styled.div`
 const Title = styled.div`
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #61686d;
+  color: #868f96;
   padding: 0px 10px 10px 0px;
 `;
 
