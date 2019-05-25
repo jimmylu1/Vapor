@@ -32,6 +32,7 @@ const VR_rows = styled.div`
   margin: 0px 0px 2px 37px;
   width: 223px;
   height: 22px;
+  cursor: pointer;
   &:hover {
     color: white;
     background: #63baec;

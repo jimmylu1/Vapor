@@ -19,7 +19,7 @@ const YourStore = styled.div`
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
-  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
+  cursor: pointer;
   &:hover {
     color: #202323;
     background-color: #e3eaef;
@@ -34,7 +34,7 @@ const Games = styled.div`
   position: relative;
   border-right: 1px solid;
   border-left: 1px solid;
-  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
+  cursor: pointer;
   &:hover {
     color: #202323;
     background-color: #e3eaef;
@@ -47,7 +47,7 @@ const Software = styled.div`
   padding: 11px 11px 11px 11px;
   position: relative;
   border-right: 1px solid;
-  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
+  cursor: pointer;
   &:hover {
     color: #202323;
     background-color: #e3eaef;
@@ -60,7 +60,7 @@ const Hardware = styled.div`
   padding: 11px 11px 11px 11px;
   position: relative;
   border-right: 1px solid;
-  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
+  cursor: pointer;
   &:hover {
     color: #202323;
     background-color: #e3eaef;
@@ -73,7 +73,7 @@ const News = styled.div`
   padding: 11px 11px 11px 11px;
   position: relative;
   border-right: 1px solid;
-  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
+  cursor: pointer;
   &:hover {
     color: #202323;
     background-color: #e3eaef;

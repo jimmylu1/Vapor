@@ -15,6 +15,7 @@ const Store = styled.div`
   bottom: 17px;
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 
@@ -27,6 +28,7 @@ const Community = styled.div`
   bottom: 17px;
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 
@@ -40,6 +42,7 @@ const User = styled.div`
   right: 1015px;
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 ///555
@@ -53,6 +56,7 @@ const Chat = styled.div`
   right: 961px;
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 
@@ -66,6 +70,7 @@ const Support = styled.div`
   right: 878px;
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 
@@ -82,6 +87,7 @@ const Install = styled.button`
   height: 19px;
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 
@@ -194,13 +200,13 @@ class Main_top extends React.Component {
           >
             Install Steam
           </Install>
-          <img
+          {/* <img
             src="https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_menu_notifications.png"
             height="11"
             width="14"
             margin-top="14px"
             margin-right="130px"
-          />
+          /> */}
         </Wrapper>
       </nav>
     );

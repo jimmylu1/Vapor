@@ -12,6 +12,7 @@ const Sub_store = styled.div`
   box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 

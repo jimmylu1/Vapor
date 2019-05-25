@@ -30,6 +30,7 @@ const Subtitle = styled.span`
   /* background-image: -webkit-linear-gradient(left, #15202c, #0e141d); */
   &:hover {
     color: #67c0f4;
+    cursor: pointer;
   }
 `;
 
@@ -42,6 +43,7 @@ const Game_rows = styled.div`
   height: 17px;
   width: 284.047px;
   margin-bottom: 2px;
+  cursor: pointer;
   &:hover {
     color: white;
     background: #63baec;

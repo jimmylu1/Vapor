@@ -9,7 +9,6 @@ const Game_layout = styled.div`
 const Break = styled.hr`
   margin-top: 0px;
   margin-bottom: 0px;
-  /* background: "#273747"; */
   color: white;
 `;
 
@@ -21,6 +20,7 @@ const Sub_games = styled.div`
   box-shadow: 1px 0px 0px rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(16, 21, 25, 0.3);
   border-left: 1px solid rgba(16, 21, 25, 0.3);
+  cursor: pointer;
   &:hover {
     color: white;
     background-color: #171a21;

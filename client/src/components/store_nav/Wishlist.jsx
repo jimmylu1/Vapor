@@ -17,6 +17,7 @@ const Wishlist = styled.button`
   &:hover {
     color: #62696e;
     background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
   }
 `;
 

@@ -9,20 +9,17 @@ const Store_layout = styled.div`
 const Break = styled.hr`
   margin-top: 0px;
   margin-bottom: 0px;
-  /* background: "#273747"; */
   color: white;
 `;
 
 const Sub_yourstore = styled.div`
   font-family: Arial, Helvetica, sans-serif;
-  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
   font-size: 12px;
   padding: 10px;
   background: #e3eaef;
   border-right: 1px solid rgba(16, 21, 25, 0.3);
   border-left: 1px solid rgba(16, 21, 25, 0.3);
-  /* z-index: 200;
-  box-shadow: 0 0 12px #000000; */
+  cursor: pointer;
   &:hover {
     color: white;
     background-color: #171a21;
