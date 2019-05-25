@@ -37,13 +37,12 @@ const User = styled.div`
   padding: 45px 7px 7px;
   position: absolute;
   top: 20px;
-  right: 555px;
-  /* right: 604px; */
+  right: 1015px;
   &:hover {
     color: white;
   }
 `;
-
+///555
 const Chat = styled.div`
   color: #b8b6b4;
   font-family: "Motiva Sans", Sans-serif;
@@ -51,7 +50,7 @@ const Chat = styled.div`
   padding: 45px 7px 7px;
   position: absolute;
   top: 20px;
-  right: 430px;
+  right: 961px;
   &:hover {
     color: white;
   }
@@ -64,7 +63,7 @@ const Support = styled.div`
   padding: 45px 7px 7px;
   position: absolute;
   top: 20px;
-  right: 475px;
+  right: 878px;
   &:hover {
     color: white;
   }

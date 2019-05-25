@@ -71,7 +71,6 @@ const News = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
-  margin: 0px 5px 0px 0px;
   position: relative;
   border-right: 1px solid;
   /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25); */
@@ -83,10 +82,12 @@ const News = styled.div`
 
 const Searchbox = styled.input`
   position: relative;
-  margin-left: 776px;
+  margin-left: 1235px;
   margin-top: -35px;
   /* float: left; */
   display: flex;
+  /* align-self: flex-end; */
+
   flex-direction: row;
   border: 1px solid grey;
   background-color: #316282;

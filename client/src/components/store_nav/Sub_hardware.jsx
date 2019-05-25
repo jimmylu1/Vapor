@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+const Hardware_layout = styled.div`
+  position: absolute;
+  z-index: 200;
+`;
+
 const Sub_hardware = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -16,11 +21,13 @@ const Sub_hardware = styled.div`
 `;
 
 const Styled_hardware = () => (
-  <div style={{ position: "absolute" }}>
-    <Sub_hardware>Valve Index</Sub_hardware>
-    <Sub_hardware>Steam Controller</Sub_hardware>
-    <Sub_hardware>Steam Link</Sub_hardware>
-    <Sub_hardware>HTC Vive</Sub_hardware>
-  </div>
+  <Hardware_layout>
+    <div style={{ boxShadow: " 0 0 12px #000000" }}>
+      <Sub_hardware>Valve Index</Sub_hardware>
+      <Sub_hardware>Steam Controller</Sub_hardware>
+      <Sub_hardware>Steam Link</Sub_hardware>
+      <Sub_hardware>HTC Vive</Sub_hardware>
+    </div>
+  </Hardware_layout>
 );
 export default Styled_hardware;

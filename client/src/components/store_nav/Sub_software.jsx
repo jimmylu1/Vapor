@@ -1,6 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
+const Software_layout = styled.div`
+  position: absolute;
+  z-index: 200;
+`;
+
+const Break = styled.hr`
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* background: "#273747"; */
+  color: white;
+`;
+
 const Sub_software = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -16,17 +28,20 @@ const Sub_software = styled.div`
 `;
 
 const Styled_software = () => (
-  <div style={{ position: "absolute" }}>
-    <Sub_software>Software Hub</Sub_software>
-    <Sub_software>Animation and Modeling</Sub_software>
-    <Sub_software>Audio Production</Sub_software>
-    <Sub_software>Design and Illustration</Sub_software>
-    <Sub_software>Education</Sub_software>
-    <Sub_software>Game Development</Sub_software>
-    <Sub_software>Photo Editing</Sub_software>
-    <Sub_software>Utilities</Sub_software>
-    <Sub_software>Video Production</Sub_software>
-    <Sub_software>Web Publishing</Sub_software>
-  </div>
+  <Software_layout>
+    <div style={{ boxShadow: " 0 0 12px #000000" }}>
+      <Sub_software>Software Hub</Sub_software>
+      <Break />
+      <Sub_software>Animation and Modeling</Sub_software>
+      <Sub_software>Audio Production</Sub_software>
+      <Sub_software>Design and Illustration</Sub_software>
+      <Sub_software>Education</Sub_software>
+      <Sub_software>Game Development</Sub_software>
+      <Sub_software>Photo Editing</Sub_software>
+      <Sub_software>Utilities</Sub_software>
+      <Sub_software>Video Production</Sub_software>
+      <Sub_software>Web Publishing</Sub_software>
+    </div>
+  </Software_layout>
 );
 export default Styled_software;

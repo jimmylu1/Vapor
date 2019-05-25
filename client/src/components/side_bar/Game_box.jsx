@@ -41,6 +41,7 @@ const Game_rows = styled.div`
   padding: 4px 8px 4px 3px;
   height: 17px;
   width: 284.047px;
+  margin-bottom: 2px;
   &:hover {
     color: white;
     background: #63baec;

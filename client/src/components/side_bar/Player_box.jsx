@@ -22,7 +22,7 @@ const Player_rows = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   padding: 4px 8px 0px;
-  margin: 0px 0px 0px 37px;
+  margin: 0px 0px 2px 37px;
   width: 223px;
   height: 22px;
   &:hover {
