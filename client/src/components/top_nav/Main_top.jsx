@@ -74,7 +74,7 @@ const Support = styled.div`
   }
 `;
 
-const Install = styled.button`
+const Install = styled.div`
   color: #e5efdc;
   font-family: "Motiva Sans", Sans-serif;
   font-size: 11px;
@@ -83,7 +83,7 @@ const Install = styled.button`
   padding: 4px 9px 0px 35px;
   position: absolute;
   top: 14px;
-  right: 130px;
+  right: 172px;
   height: 19px;
   &:hover {
     color: white;
@@ -91,11 +91,73 @@ const Install = styled.button`
   }
 `;
 
-const Notif = styled.div`
-  top: 14px;
-  right: 20px;
+const Install_icon = styled.span`
+  right: 89px;
+  top: 6px;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  padding: 0px 4px 0px 0px;
+  background-image: url(https://steamstore-a.akamaihd.net/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+  background-size: 14px;
 `;
 
+const Notif = styled.span`
+  background: #262625;
+  right: 147px;
+  top: 15px;
+  position: absolute;
+  height: 12px;
+  width: 4px;
+  padding: 0px 5px 0px 7px;
+  background-image: url(https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_menu_notifications.png);
+  background-size: 16px;
+  cursor: pointer;
+`;
+
+const Info = styled.span`
+  top: 11px;
+  right: 88px;
+  margin-left: 2px;
+  position: absolute;
+  color: #b8b6b4;
+  font-size: 11px;
+  font-family: "Motiva Sans", Sans-serif;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+`;
+
+const Currency = styled.span`
+  top: 28px;
+  right: 105px;
+  margin-top: 3px;
+  position: absolute;
+  padding: 2px 0px 0px 0px;
+  color: #b8b6b4;
+  font-size: 11px;
+  font-family: "Motiva Sans", Sans-serif;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+`;
+
+const Avatar = styled.span`
+  /* background: #262625;
+   */
+  border: 1px black;
+  right: 40px;
+  top: 15px;
+  position: absolute;
+  height: 22px;
+  width: 24px;
+  padding: 10px 10px 2px 10px;
+  background-image: url(https://i.imgur.com/hHVjPbv.jpg);
+  background-size: 40px;
+  cursor: pointer;
+`;
 class Main_top extends React.Component {
   constructor() {
     super();
@@ -198,15 +260,18 @@ class Main_top extends React.Component {
             href="https://store.steampowered.com/about/"
             style={{ textDecoration: "none" }}
           >
+            <Install_icon />
             Install Steam
           </Install>
-          {/* <img
-            src="https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_menu_notifications.png"
-            height="11"
-            width="14"
-            margin-top="14px"
-            margin-right="130px"
-          /> */}
+          <Notif />
+          <Info>
+            User
+            <span>
+              <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
+            </span>
+          </Info>
+          <Currency>$1.00</Currency>
+          <Avatar />
         </Wrapper>
       </nav>
     );
