@@ -153,11 +153,12 @@ const Avatar = styled.span`
   position: absolute;
   height: 22px;
   width: 24px;
-  padding: 10px 10px 2px 10px;
+  padding: 10px 7px 2px 10px;
   background-image: url(https://i.imgur.com/hHVjPbv.jpg);
   background-size: 40px;
   cursor: pointer;
 `;
+
 class Main_top extends React.Component {
   constructor() {
     super();

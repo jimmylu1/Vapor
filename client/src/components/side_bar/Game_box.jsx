@@ -84,7 +84,8 @@ class Game_box extends React.Component {
         <Maintitle>Release Date: Jul 9, 2013</Maintitle>
         <span>
           <Game_rows>
-            Visit the website <Frame />
+            Visit the website
+            <Frame />
           </Game_rows>
         </span>
         <Game_rows>View update history</Game_rows>

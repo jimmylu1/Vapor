@@ -243,7 +243,6 @@ class Main_sub extends React.Component {
           </div>
         </Layout>
         <Searchbox placeholder="search the store" />
-        {/* <span> &#x1f50e;</span> */}
         {/* <Searchbutton /> */}
         <div />
       </nav>

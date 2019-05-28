@@ -67,14 +67,46 @@ const Flag = styled.button`
 class Button_box extends React.Component {
   constructor() {
     super();
+    this.state = {
+      share: false,
+      embed: false,
+      flag: false
+    };
+    this.handleShare = this.handleShare.bind(this);
+    this.handleEmbed = this.handleEmbed.bind(this);
+    this.handleFlag = this.handleFlag.bind(this);
+  }
+
+  handleShare(e) {
+    e.preventDefault();
+    console.log("handleShare");
+    this.setState({
+      share: true
+    });
+  }
+
+  handleEmbed(e) {
+    e.preventDefault();
+    console.log("handleEmbed");
+    this.setState({
+      embed: true
+    });
+  }
+
+  handleFlag(e) {
+    e.preventDefault();
+    console.log("handleFlag");
+    this.setState({
+      flag: true
+    });
   }
 
   render() {
     return (
       <Button_layout>
-        <Share>Share</Share>
-        <Embed>Embed</Embed>
-        <Flag>Report</Flag>
+        <Share onClick={this.handleShare}>Share</Share>
+        <Embed onClick={this.handleEmbed}>Embed</Embed>
+        <Flag onClick={this.handleFlag}>Report</Flag>
       </Button_layout>
     );
   }

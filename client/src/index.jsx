@@ -16,8 +16,6 @@ const Main_layout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* flex-flow: column wrap; */
-  /* flex: wrap; */
 `;
 
 class Navbar_sidebar extends React.Component {
