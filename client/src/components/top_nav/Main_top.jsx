@@ -216,8 +216,8 @@ class Main_top extends React.Component {
       <nav>
         <Wrapper>
           <img
-            src="https://steamstore-a.akamaihd.net/public/shared/images/header/globalheader_logo.png?t=962016"
-            width="176"
+            src="https://i.imgur.com/zpXgB56_d.jpg?maxwidth=640&shape=thumb&fidelity=medium"
+            width="159"
             height="44"
             position="absolute"
           />

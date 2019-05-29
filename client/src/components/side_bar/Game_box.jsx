@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 const Game_layout = styled.div`
   /* display: flex;
@@ -63,23 +64,52 @@ const Frame = styled.span`
 class Game_box extends React.Component {
   constructor() {
     super();
+    this.state = {
+      title: "",
+      genre: "",
+      developer: "",
+      publisher: ""
+    };
+  }
+
+  componentDidMount() {
+    this.getGames();
+  }
+
+  getGames() {
+    axios
+      .get("/game")
+      .then(res => {
+        console.log("client get works");
+        console.log("res.data", res.data);
+        console.log("title", res.data.title);
+        this.setState({
+          title: res.data.title,
+          genre: res.data.genre,
+          developer: res.data.developer,
+          publisher: res.data.publisher
+        });
+      })
+      .catch(err => {
+        console.log("Error ", err);
+      });
   }
 
   render() {
     return (
       <Game_layout>
-        <Title>Title: Dota 2</Title>
+        <Title>Title: {this.state.title}</Title>
         <Title>
-          Genre: <Subtitle>Action</Subtitle>
-          <Subtitle>, Free to Play</Subtitle>
-          <Subtitle>, Strategy</Subtitle>
+          Genre: <Subtitle>{this.state.genre}</Subtitle>
+          <Subtitle>, {this.state.genre}</Subtitle>
+          <Subtitle>, {this.state.genre}</Subtitle>
         </Title>
         <Title>
           Developer:
-          <Subtitle>Valve</Subtitle>
+          <Subtitle>{this.state.developer}</Subtitle>
         </Title>
         <Title>
-          Publisher: <Subtitle>Valve</Subtitle>
+          Publisher: <Subtitle>{this.state.publisher}</Subtitle>
         </Title>
         <Maintitle>Release Date: Jul 9, 2013</Maintitle>
         <span>
