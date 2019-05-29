@@ -230,163 +230,163 @@ class Languages_box extends React.Component {
                 <SubTd />
                 <SubTd />
               </TRow>
+              <TRow>
+                <SubTd>German</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Greek</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Hungarian</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Italian</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Japanese</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Korean</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Norwegian</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Polish</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Portugese</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Portugese-Brazil</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Romanian</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Russian</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Simplified Chinese</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Spanish - Spain</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Swedish</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Thai</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Traditional Chinese</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Turkish</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
+              <TRow>
+                <SubTd>Ukranian</SubTd>
+                <SubCheck>
+                  <Check>✔</Check>
+                </SubCheck>
+                <SubTd />
+                <SubTd />
+              </TRow>
             </tbody>
-            <TRow>
-              <SubTd>German</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Greek</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Hungarian</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Italian</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Japanese</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Korean</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Norwegian</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Polish</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Portugese</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Portugese-Brazil</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Romanian</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Russian</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Simplified Chinese</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Spanish - Spain</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Swedish</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Thai</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Traditional Chinese</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Turkish</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
-            <TRow>
-              <SubTd>Ukranian</SubTd>
-              <SubCheck>
-                <Check>✔</Check>
-              </SubCheck>
-              <SubTd />
-              <SubTd />
-            </TRow>
           </Table>
         </Languages_layout>
       );
