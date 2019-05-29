@@ -7,13 +7,14 @@ const db = require("../db");
 app.use(express.static("./public"));
 app.use(parser.json());
 
-app.get("/steam1", (req, res) => {
-  db.getAll((err, data) => {
+app.get("/game", (req, res) => {
+  db.getOne(req.body.title, req.body.genre, (err, data) => {
     if (err) {
       console.log("ERROR: ", err);
       res.status(400);
     } else {
       // console.log("Data received from db: ", data);
+      console.log("Server get success!");
       res.status(200);
       res.send(data);
       res.end();

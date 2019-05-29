@@ -68,11 +68,11 @@ Game.sync({ force: false, logging: false }).then(() => {
   console.log("Game table synced");
 });
 
-const getAll = cb => {
-  Game.findAll()
+const getOne = (title, genre, cb) => {
+  Game.findOne(title, genre)
     .then(data => cb(null, data))
     .catch(err => cb(err));
 };
 
 module.exports.Game = Game;
-module.exports.getAll = getAll;
+module.exports.getOne = getOne;
