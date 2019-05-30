@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Player_layout = styled.div`
   display: flex;
+  align-self: flex-end;
   flex-direction: column;
   background-image: -webkit-linear-gradient(left, #15202c, #0e141d);
   padding: 16px;
@@ -16,6 +17,7 @@ const Break = styled.hr`
 `;
 
 const Player_rows = styled.div`
+  align-self: flex-end;
   display: flex;
   background-color: #172631;
   color: #63baec;
@@ -33,7 +35,7 @@ const Player_rows = styled.div`
 `;
 
 const Frame = styled.div`
-  align-self: flex-start;
+  align-self: flex-end;
   position: absolute;
   background: #111923;
   width: 30px;

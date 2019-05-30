@@ -31,12 +31,20 @@ class Navbar_sidebar extends React.Component {
         <Wishlist>WISHLIST</Wishlist>
         <Main_sub />
         <br />
-        <Main_layout>
-          <Side_bar />
-        </Main_layout>
+        <Main_layout />
       </Background>
     );
   }
 }
 
-ReactDOM.render(<Navbar_sidebar />, document.getElementById("navbar_sidebar"));
+class Sidebar extends React.Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return <Side_bar />;
+  }
+}
+
+ReactDOM.render(<Navbar_sidebar />, document.getElementById("navbar"));
+ReactDOM.render(<Sidebar />, document.getElementById("sidebar"));
