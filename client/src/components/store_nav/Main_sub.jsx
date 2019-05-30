@@ -82,9 +82,9 @@ const News = styled.div`
 
 const Searchbox = styled.input`
   position: relative;
-  margin-left: 1235px;
+  /* margin-left: 1235px; */
   margin-top: -35px;
-  /* float: left; */
+  float: right;
   display: flex;
   /* align-self: flex-end; */
 

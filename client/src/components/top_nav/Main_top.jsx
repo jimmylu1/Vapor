@@ -37,9 +37,8 @@ const User = styled.div`
   font-family: "Motiva Sans", Sans-serif;
   font-size: 14px;
   padding: 45px 7px 7px;
-  position: absolute;
-  top: 20px;
-  right: 1015px;
+  position: relative;
+  bottom: 17px;
   &:hover {
     color: white;
     cursor: pointer;
@@ -51,9 +50,8 @@ const Chat = styled.div`
   font-family: "Motiva Sans", Sans-serif;
   font-size: 14px;
   padding: 45px 7px 7px;
-  position: absolute;
-  top: 20px;
-  right: 961px;
+  position: relative;
+  bottom: 17px;
   &:hover {
     color: white;
     cursor: pointer;
@@ -65,9 +63,8 @@ const Support = styled.div`
   font-family: "Motiva Sans", Sans-serif;
   font-size: 14px;
   padding: 45px 7px 7px;
-  position: absolute;
-  top: 20px;
-  right: 878px;
+  position: relative;
+  bottom: 17px;
   &:hover {
     color: white;
     cursor: pointer;
@@ -81,9 +78,9 @@ const Install = styled.div`
   text-align: center;
   background: #616a72;
   padding: 4px 9px 0px 35px;
-  position: absolute;
-  top: 14px;
-  right: 172px;
+  position: relative;
+  bottom: 67px;
+  left: 596px;
   height: 19px;
   &:hover {
     color: white;
