@@ -19,6 +19,11 @@ const Main_layout = styled.div`
   align-items: flex-end;
 `;
 
+const Wrapper = styled.div`
+  margin: auto;
+  max-width: 940px;
+`;
+
 class Navbar_sidebar extends React.Component {
   constructor() {
     super();
@@ -26,13 +31,15 @@ class Navbar_sidebar extends React.Component {
 
   render() {
     return (
-      <Background>
+      <div>
         <Main_top />
-        <Wishlist>WISHLIST</Wishlist>
-        <Main_sub />
-        <br />
-        <Main_layout />
-      </Background>
+        <Wrapper>
+          <Wishlist>WISHLIST</Wishlist>
+          <Main_sub />
+          <br />
+          <Main_layout />
+        </Wrapper>
+      </div>
     );
   }
 }
@@ -42,7 +49,11 @@ class Sidebar extends React.Component {
     super();
   }
   render() {
-    return <Side_bar />;
+    return (
+      <Wrapper>
+        <Side_bar />
+      </Wrapper>
+    );
   }
 }
 

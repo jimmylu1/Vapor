@@ -10,9 +10,9 @@ const Wishlist = styled.button`
   color: white;
   margin: 0px 1px;
   padding: 0px 25px;
-  position: absolute;
-  right: 30px;
-  top: 142px;
+  position: relative;
+  top: 27px;
+  left: 836px;
   height: 20px;
   &:hover {
     color: #62696e;
