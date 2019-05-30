@@ -41,8 +41,8 @@ const User_reviews = styled.span`
 `;
 
 const Avatar = styled.span`
-  right: 270px;
-  top: 428px;
+  right: 508px;
+  top: 449px;
   position: absolute;
   height: 22px;
   width: 24px;
@@ -53,8 +53,8 @@ const Avatar = styled.span`
 `;
 
 const Check = styled.span`
-  right: 314px;
-  top: 267px;
+  right: 540px;
+  top: 289px;
   position: absolute;
   height: 10px;
   width: 9px;
@@ -64,8 +64,8 @@ const Check = styled.span`
 `;
 
 const Check2 = styled.span`
-  right: 314px;
-  top: 314px;
+  right: 540px;
+  top: 339px;
   position: absolute;
   height: 10px;
   width: 9px;
@@ -75,8 +75,8 @@ const Check2 = styled.span`
 `;
 
 const Check3 = styled.span`
-  right: 314px;
-  top: 360px;
+  right: 540px;
+  top: 386px;
   position: absolute;
   height: 10px;
   width: 9px;

@@ -10,9 +10,6 @@ const Wishlist = styled.button`
   color: white;
   margin: 0px 1px;
   padding: 0px 25px;
-  /* position: absolute; */
-  /* right: 30px; */
-  /* float: right; */
   position: relative;
   top: 27px;
   left: 836px;

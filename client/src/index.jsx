@@ -49,7 +49,11 @@ class Sidebar extends React.Component {
     super();
   }
   render() {
-    return <Side_bar />;
+    return (
+      <Wrapper>
+        <Side_bar />
+      </Wrapper>
+    );
   }
 }
 
