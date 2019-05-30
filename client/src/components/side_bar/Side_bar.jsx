@@ -10,6 +10,8 @@ import Button_box from "./Button_box.jsx";
 const Side_layout = styled.div`
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  float: right;
 `;
 
 class Side_bar extends React.Component {
