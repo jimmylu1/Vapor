@@ -41,9 +41,9 @@ const User_reviews = styled.span`
 `;
 
 const Avatar = styled.span`
-  right: 508px;
-  top: 449px;
   position: absolute;
+  margin-top: 26px;
+  margin-left: 19px;
   height: 22px;
   width: 24px;
   padding: 10px 7px 2px 10px;
@@ -53,9 +53,12 @@ const Avatar = styled.span`
 `;
 
 const Check = styled.span`
-  right: 540px;
-  top: 289px;
+  /* right: 540px; */
+  /* top: 289px; */
   position: absolute;
+  margin-top: 10px;
+  margin-left: 6px;
+  float: left;
   height: 10px;
   width: 9px;
   padding: 10px 0px 0px 10px;
@@ -64,9 +67,10 @@ const Check = styled.span`
 `;
 
 const Check2 = styled.span`
-  right: 540px;
-  top: 339px;
   position: absolute;
+  margin-top: 10px;
+  margin-left: 6px;
+  float: left;
   height: 10px;
   width: 9px;
   padding: 10px 0px 0px 10px;
@@ -75,9 +79,10 @@ const Check2 = styled.span`
 `;
 
 const Check3 = styled.span`
-  right: 540px;
-  top: 386px;
   position: absolute;
+  margin-top: 10px;
+  margin-left: 6px;
+  float: left;
   height: 10px;
   width: 9px;
   padding: 10px 0px 0px 10px;
@@ -94,15 +99,15 @@ class Friends_box extends React.Component {
     return (
       <div>
         <Game_relevance>Is this game relevant to you?</Game_relevance>
+        <Check />
         <Hours_played>
-          <Check />
           100 hours played
           <span>
             <Break />
           </span>
         </Hours_played>
+        <Check2 />
         <Hours_played>
-          <Check2 />
           User reviews:
           <User_reviews>
             Very Positive
@@ -111,16 +116,15 @@ class Friends_box extends React.Component {
             </span>
           </User_reviews>
         </Hours_played>
+        <Check3 />
         <Hours_played>
-          <Check3 />
           In the Top Sellers
           <span>
             <Break />
           </span>
         </Hours_played>
-        <Recommended>
-          Recommended By 1 Friend <Avatar />
-        </Recommended>
+        <Avatar />
+        <Recommended>Recommended By 1 Friend</Recommended>
       </div>
     );
   }
