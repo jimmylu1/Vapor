@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import Styled_yourstore from "./Sub_yourstore.jsx";
 import Styled_games from "./Sub_games.jsx";
 import Styled_software from "./Sub_software.jsx";
 import Styled_hardware from "./Sub_hardware.jsx";
+const styled = window.styled;
 
 const Layout = styled.div`
   display: flex;

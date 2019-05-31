@@ -1,10 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import Wrapper from "./Wrapper.jsx";
 import Styled_store from "./SubStore.jsx";
 import Styled_community from "./SubCommunity.jsx";
 import Styled_user from "./SubUser.jsx";
-// import { notif } from "./notif.img";
+const styled = window.styled;
 
 const Store = styled.div`
   color: #b8b6b4;

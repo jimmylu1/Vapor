@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components";
 import Main_top from "./components/top_nav/main_top.jsx";
 import Wishlist from "./components/store_nav/Wishlist.jsx";
 import Main_sub from "./components/store_nav/Main_sub.jsx";
 import Side_bar from "./components/side_bar/Side_bar.jsx";
 import axios from "axios";
+const styled = window.styled;
 
 const Background = styled.div`
   background-image: url(https://steamcdn-a.akamaihd.net/steam/apps/570/page_bg_generated_v6b.jpg?t=1557267263);
