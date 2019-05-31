@@ -15,10 +15,13 @@ const Layout = styled.div`
 
 const YourStore = styled.div`
   color: #d9dadd;
+  text-align: center;
+  margin-top: 1px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
+  border-right: 1px solid rgba(16, 21, 25, 0.3);
   cursor: pointer;
   &:hover {
     color: #202323;
@@ -29,11 +32,12 @@ const YourStore = styled.div`
 const Games = styled.div`
   color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 1px;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
-  border-right: 1px solid;
-  border-left: 1px solid;
+  border-right: 1px solid rgba(16, 21, 25, 0.3);
   cursor: pointer;
   &:hover {
     color: #202323;
@@ -43,10 +47,12 @@ const Games = styled.div`
 const Software = styled.div`
   color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 1px;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
-  border-right: 1px solid;
+  border-right: 1px solid rgba(16, 21, 25, 0.3);
   cursor: pointer;
   &:hover {
     color: #202323;
@@ -56,10 +62,12 @@ const Software = styled.div`
 const Hardware = styled.div`
   color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 1px;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
-  border-right: 1px solid;
+  border-right: 1px solid rgba(16, 21, 25, 0.3);
   cursor: pointer;
   &:hover {
     color: #202323;
@@ -69,10 +77,12 @@ const Hardware = styled.div`
 const News = styled.div`
   color: #d9dadd;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 1px;
   font-size: 13px;
   padding: 11px 11px 11px 11px;
   position: relative;
-  border-right: 1px solid;
+  border-right: 1px solid rgba(16, 21, 25, 0.3);
   cursor: pointer;
   &:hover {
     color: #202323;
@@ -105,7 +115,16 @@ const Searchbox = styled.input`
   }
 `;
 
-const Searchbutton = styled.span``;
+const Arrow = styled.span`
+  background-image: url(https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png);
+  margin-left: 8px;
+  float: right;
+  top: 50px;
+  height: 15px;
+  width: 15px;
+  margin-top: 2px;
+  background-size: 20px;
+`;
 
 class Main_sub extends React.Component {
   constructor() {
@@ -187,9 +206,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showYourstore}
             >
               Your Store
-              <span>
-                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
-              </span>
+              <Arrow />
             </YourStore>
             {this.state.displayYourStore && <Styled_yourstore />}
           </div>
@@ -202,9 +219,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showGames}
             >
               Games
-              <span>
-                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
-              </span>
+              <Arrow />
             </Games>
             {this.state.displayGames && <Styled_games />}
           </div>
@@ -217,9 +232,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showSoftware}
             >
               Software
-              <span>
-                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
-              </span>
+              <Arrow />
             </Software>
             {this.state.displaySoftware && <Styled_software />}
           </div>
@@ -232,9 +245,7 @@ class Main_sub extends React.Component {
               onMouseEnter={this.showHardware}
             >
               Hardware
-              <span>
-                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
-              </span>
+              <Arrow />
             </Hardware>
             {this.state.displayHardware && <Styled_hardware />}
           </div>
