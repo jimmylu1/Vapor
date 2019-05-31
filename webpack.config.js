@@ -8,6 +8,13 @@ module.exports = {
     filename: "bundle.js",
     path: DIST_DIR
   },
+  externals: {
+    "styled-components": {
+      commonjs: "styled-components",
+      commonjs2: "styled-components",
+      amd: "styled-components"
+    }
+  },
   module: {
     rules: [
       {

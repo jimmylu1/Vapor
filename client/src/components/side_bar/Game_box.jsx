@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import axios from "axios";
+const styled = window.styled;
 
 const Game_layout = styled.div`
   /* display: flex;

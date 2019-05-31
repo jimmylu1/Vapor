@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+const styled = window.styled;
 
 const Sub_community = styled.div`
   color: #b8b6b4;

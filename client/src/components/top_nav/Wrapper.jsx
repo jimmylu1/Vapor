@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components";
+const styled = window.styled;
 
 const Wrapper = styled.div`
   padding: 1.8em;
