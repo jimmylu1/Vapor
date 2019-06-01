@@ -78,7 +78,7 @@ class Game_box extends React.Component {
 
   getGames() {
     axios
-      .get("/game")
+      .get("database:80/game")
       .then(res => {
         console.log("client get works");
         console.log("res.data", res.data);
