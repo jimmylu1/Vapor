@@ -17,6 +17,10 @@ const Store = styled.div`
     cursor: pointer;
   }
 `;
+const Margin = styled.div`
+  margin: 0 auto;
+  width: 940px;
+`;
 
 const Community = styled.div`
   color: #b8b6b4;
@@ -70,16 +74,16 @@ const Support = styled.div`
   }
 `;
 
-const Install = styled.div`
+const Install = styled.button`
   color: #e5efdc;
   font-family: "Motiva Sans", Sans-serif;
   font-size: 11px;
   text-align: center;
   background: #616a72;
-  padding: 4px 9px 0px 35px;
+  padding: 4px 9px 4px 30px;
   position: relative;
   bottom: 67px;
-  left: 596px;
+  left: 200px;
   height: 19px;
   &:hover {
     color: white;
@@ -88,8 +92,8 @@ const Install = styled.div`
 `;
 
 const Install_icon = styled.span`
-  right: 89px;
-  top: 6px;
+  right: 83px;
+  top: 5px;
   position: absolute;
   height: 10px;
   width: 10px;
@@ -100,7 +104,7 @@ const Install_icon = styled.span`
 
 const Notif = styled.span`
   background: #262625;
-  right: 147px;
+  right: 345px;
   top: 15px;
   position: absolute;
   height: 12px;
@@ -113,7 +117,7 @@ const Notif = styled.span`
 
 const Info = styled.span`
   top: 11px;
-  right: 88px;
+  right: 288px;
   margin-left: 2px;
   position: absolute;
   color: #b8b6b4;
@@ -127,7 +131,7 @@ const Info = styled.span`
 
 const Currency = styled.span`
   top: 28px;
-  right: 105px;
+  right: 307px;
   margin-top: 3px;
   position: absolute;
   padding: 2px 0px 0px 0px;
@@ -144,7 +148,7 @@ const Avatar = styled.span`
   /* background: #262625;
    */
   border: 1px black;
-  right: 40px;
+  right: 245px;
   top: 15px;
   position: absolute;
   height: 22px;
@@ -211,64 +215,69 @@ class Main_top extends React.Component {
     return (
       <nav>
         <Wrapper>
-          <img
-            src="https://i.imgur.com/zpXgB56_d.jpg?maxwidth=640&shape=thumb&fidelity=medium"
-            width="159"
-            height="44"
-            position="absolute"
-          />
-          <div
-            onMouseLeave={this.hideStore}
-            style={{ display: "inline-block" }}
-          >
-            <Store
+          <Margin>
+            <img
+              src="https://i.imgur.com/zpXgB56_d.jpg?maxwidth=640&shape=thumb&fidelity=medium"
+              width="159"
+              height="44"
+              position="absolute"
+            />
+            <div
+              onMouseLeave={this.hideStore}
               style={{ display: "inline-block" }}
-              onMouseEnter={this.showStore}
             >
-              STORE
-            </Store>
-            {this.state.displayStore && <Styled_store />}
-          </div>
-          <div
-            onMouseLeave={this.hideCommunity}
-            style={{ display: "inline-block" }}
-          >
-            <Community
+              <Store
+                style={{ display: "inline-block" }}
+                onMouseEnter={this.showStore}
+              >
+                STORE
+              </Store>
+              {this.state.displayStore && <Styled_store />}
+            </div>
+            <div
+              onMouseLeave={this.hideCommunity}
               style={{ display: "inline-block" }}
-              onMouseEnter={this.showCommunity}
             >
-              COMMUNITY
-            </Community>
-            {this.state.displayCommunity && <Styled_community />}
-          </div>
-          <div onMouseLeave={this.hideUser} style={{ display: "inline-block" }}>
-            <User
+              <Community
+                style={{ display: "inline-block" }}
+                onMouseEnter={this.showCommunity}
+              >
+                COMMUNITY
+              </Community>
+              {this.state.displayCommunity && <Styled_community />}
+            </div>
+            <div
+              onMouseLeave={this.hideUser}
               style={{ display: "inline-block" }}
-              onMouseEnter={this.showUser}
             >
-              USER
-            </User>
-            {this.state.displayUser && <Styled_user />}
-          </div>
-          <Chat style={{ display: "inline-block" }}>CHAT</Chat>
-          <Support style={{ display: "inline-block" }}>SUPPORT</Support>
-          <Install
-            as="a"
-            href="https://store.steampowered.com/about/"
-            style={{ textDecoration: "none" }}
-          >
-            <Install_icon />
-            Install Steam
-          </Install>
-          <Notif />
-          <Info>
-            User
-            <span>
-              <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
-            </span>
-          </Info>
-          <Currency>$1.00</Currency>
-          <Avatar />
+              <User
+                style={{ display: "inline-block" }}
+                onMouseEnter={this.showUser}
+              >
+                USER
+              </User>
+              {this.state.displayUser && <Styled_user />}
+            </div>
+            <Chat style={{ display: "inline-block" }}>CHAT</Chat>
+            <Support style={{ display: "inline-block" }}>SUPPORT</Support>
+            <Install
+              as="a"
+              href="https://store.steampowered.com/about/"
+              style={{ textDecoration: "none" }}
+            >
+              <Install_icon />
+              Install Steam
+            </Install>
+            <Notif />
+            <Info>
+              User
+              <span>
+                <img src="https://store.steampowered.com/public/images/v6/ico/ico_arrow_dn_for_select.png" />
+              </span>
+            </Info>
+            <Currency>$1.00</Currency>
+            <Avatar />
+          </Margin>
         </Wrapper>
       </nav>
     );

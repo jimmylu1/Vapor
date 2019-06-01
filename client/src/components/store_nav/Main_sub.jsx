@@ -97,7 +97,7 @@ const Searchbox = styled.input`
   float: right;
   display: flex;
   /* align-self: flex-end; */
-
+  margin-right: 2px;
   flex-direction: row;
   border: 1px solid grey;
   background-color: #316282;
