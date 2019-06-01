@@ -17,14 +17,16 @@ for (let i = 0; i < 99; i++) {
   });
 }
 
-db.Game.sync({ force: true, logging: false }).then(() => {
-  console.log("Game table synced");
-});
-
-db.Game.bulkCreate(data)
+db.Game.sync({ force: true, logging: false })
   .then(() => {
-    return db.Game.findAll();
+    console.log("Game table synced");
   })
-  .then(data => {
-    console.log("SUCCESS", data);
+  .then(() => {
+    db.Game.bulkCreate(data)
+      .then(() => {
+        return db.Game.findAll();
+      })
+      .then(data => {
+        console.log("SUCCESS", data);
+      });
   });

@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize("steam1", "root", null, {
-  host: "localhost",
+  host: "database",
   dialect: "mysql",
   pool: {
     max: 5,
@@ -10,6 +10,8 @@ const sequelize = new Sequelize("steam1", "root", null, {
     idle: 10000
   }
 });
+
+// 192.168.99.100
 
 sequelize
   .authenticate()
